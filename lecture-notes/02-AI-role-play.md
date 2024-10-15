@@ -34,6 +34,9 @@
 |玩家1紅卡  |(2, 2)  |(0, 3)  |
 |玩家1黑卡  |(3, 0)  |(1, 1)  |
 
+### Waking Ned Devine
+
+![](https://m.media-amazon.com/images/I/A1WL8i6HjYL._AC_UF1000,1000_QL80_.jpg)
 
 ## 角色扮演
 
