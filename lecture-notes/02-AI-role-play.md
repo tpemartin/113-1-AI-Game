@@ -45,7 +45,8 @@
 
 ### Waking Ned Devine
 
-![](https://m.media-amazon.com/images/I/A1WL8i6HjYL._AC_UF1000,1000_QL80_.jpg)
+<img src="https://m.media-amazon.com/images/I/A1WL8i6HjYL._AC_UF1000,1000_QL80_.jpg" width="50%"/>
+
 
 ## 角色扮演
 
