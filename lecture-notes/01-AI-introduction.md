@@ -7,7 +7,8 @@ AI:
 
 > **Generative language models** are a specific type of generative AI that focuses on generating text-based content. These models are trained on large datasets of text to learn the patterns and structures of language, allowing them to generate new text that is coherent and contextually relevant.
 
-  - Examples are: **[ChatGPT](https://chatgpt.com), [Microsoft's Copilot](https://copilot.microsoft.com/), and [Google's Gemini](https://gemini.google.com/app)**. (有些也可以生成非語文的成果)
+  - Examples are: **[ChatGPT](https://chatgpt.com), [Microsoft's Copilot](https://copilot.microsoft.com/), and [Google's Gemini](https://gemini.google.com/app)**. (有些也可以生成非語文的成果)  
+  - <https://classroom.google.com/c/Njg1NDczMDc4NTI0/m/NzE0NDk5MTQwMTQw/details>
   
 > :exclamation: Gemini目前不能使用gm.ntpu.edu.tw的帳號登入，只能使用gmail.com帳號登入。
 
