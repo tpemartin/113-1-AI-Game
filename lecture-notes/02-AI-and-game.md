@@ -1,2 +1,0 @@
-# AI and Game
-

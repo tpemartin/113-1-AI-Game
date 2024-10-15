@@ -1,4 +1,4 @@
-# Introduction
+# 1. Introduction
 
 
 AI:  
@@ -11,14 +11,16 @@ AI:
   
 > :exclamation: Gemini目前不能使用gm.ntpu.edu.tw的帳號登入，只能使用gmail.com帳號登入。
 
-# Usage of AIs
+## Usage of AIs
 
   - 知識的補充及解釋  
-  - 語言的翻譯：人對人（外國語文），人對機器（程式），人對數學模型。  
+  - 語言的翻譯：人對人（外國語文），人對機器（程式），人對數學模型。 
   - 問題的解決方案。
   - 其他。
 
-# AI's bill charge
+> 語言的翻譯中的A對B，指的是A語言對B語言的翻譯，如人對人（外國語文），人對機器（程式），人對數學模型。請給幾個prompts例子作為語言翻譯的示範。
+
+## AI's billing
 
   - 以**token**數量計費。  
   - **Token**是指單字、字元集合、或是單字和標點符號的組合，被大型語言模型（LLMs）用來將文本分解成。
