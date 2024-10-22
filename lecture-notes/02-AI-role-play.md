@@ -23,12 +23,30 @@
 
 4. **若玩家1選擇黑卡，而玩家2選擇黑卡**：報酬為(1, 1)。
 
+
+> :exclamation: 可以請AI以經濟模型來呈現。
+
+#### Play
+
+每一round的報酬是你對上全班所有出招後的報酬平均。
+
+  1. Game sheet one round. 
+  2. Game sheet second round. 同時寫下這回合出招原因。
+
 ### Game 2.2
 
 |  |玩家2紅卡  |玩家2黑卡  |
 |---|---|---|
 |玩家1紅卡  |(5, 5)  |(0, 6)  |
 |玩家1黑卡  |(6, 0)  |(1, 1)  |
+
+#### Play
+
+每一round的報酬是你對上全班所有出招後的報酬平均。
+
+  1. Game sheet one round. 
+  2. Game sheet second round. 同時寫下這回合出招原因。
+
 
 > Prompt裡的表格可以這樣寫（Markdown語法）：
 > ```
@@ -39,6 +57,8 @@
 > ```
 > 不用管空格或對齊，Markdown會自動排版。
 
+
+
 ### Waking Ned Devine
 
 <img src="https://m.media-amazon.com/images/I/A1WL8i6HjYL._AC_UF1000,1000_QL80_.jpg" width="50%"/>
@@ -46,7 +66,11 @@
 
 ## 角色扮演
 
+
+AI prompt>
+
 現在我們將進行角色扮演，我將扮演玩家1，而您將扮演玩家2。
 
 請選擇您的策略：紅卡或黑卡, 選好後只告訴我你選好了，問我選擇什麼。等我告訴你後，告訴我我的報酬是多少，你的報酬是多少。然後問我要不要再玩一次。
+
 
