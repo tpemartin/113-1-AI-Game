@@ -36,6 +36,8 @@
 <details>
 <summary>Copilot's answer</summary>
 
+*** 
+
 Sure! Let's design a 2x2 game where there is no pure strategy Nash equilibrium. Here's an example:
 
 ### Game Matrix
@@ -63,5 +65,7 @@ To check for pure strategy Nash equilibria, we need to see if there are any stra
 Since in each case, at least one player can improve their payoff by changing their strategy, there is no pure strategy Nash equilibrium in this game.
 
 Would you like to explore more about mixed strategy Nash equilibria or any other game theory concepts?
+
+*** 
 
 </details>
