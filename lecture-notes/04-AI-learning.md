@@ -293,7 +293,9 @@ I hope this helps! Let me know if you have any other questions.
 
 ## Role play interaction
 
-:exclamation: :exclamation: :exclamation: Validation is the key. (驗證是AI助理品質的關鍵)
+### Training AI
+
+:exclamation: :exclamation: :exclamation: Validation is the key. (驗證是AI助理品質的關鍵 -- 你還是需要有基本賽局知識。) 
 
 <https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L1-L13>
 
@@ -302,3 +304,35 @@ I hope this helps! Let me know if you have any other questions.
 
 <https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L15-L23>
 
+*** 
+
+第一次AI學習
+
+<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L25-L43>
+
+***
+
+第二次AI學習
+
+<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L45-L51>
+
+> :exclamation: :exclamation: :exclamation: "跟我解釋為什麼你的出招是你的最佳策略。" 在prompt中加入可以validate AI理性思維合理性的指示，方便後續調教AI。
+
+***
+
+... 七回合之後, 想提升AI的策略性考去回顧對手過去的策略，並思考對手的策略來調整自己的策略。
+
+<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L195-L222>
+
+
+***
+
+### Use the Trained AI 
+
+再次驗證AI的策略性思考，如果合理，透過prompt指示AI使用它被訓練完後的策略理性思考來進行以後遊戲的對局。
+
+<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L288-L315>
+
+***
+
+<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L317-L335>
