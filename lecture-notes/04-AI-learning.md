@@ -11,7 +11,7 @@
 
 > :exclamation: 確認AI的認知是否正確，並且能夠解釋AI的答案。
 
-### Exercise
+### Exercise (SML-game)
 
 Find Pure Strategy Nash equilibrium.
 
@@ -24,12 +24,20 @@ Find Pure Strategy Nash equilibrium.
 ```
 
 
-## Strategy suggestion 
+## Strategy suggestion
 
-> Ask if there is a dominant strategy first. 
+Nash equilibrium does not always give you the best outcome since people are not fully rational. In practice, You may want to simulate the play with AI or ask AI his suggestion given the information of the opponent.
 
+### Dominant strategy
 
-## Role play training
+  - :exclamation: Ask AI for dominant strategy first. 
+  - Dominant strategy is always the best strategy. 
+
+### Pure Strategy Nash equilibrium
+
+  - Pure strategy in Nash equilibrium is not always your best strategy in practice, unless ... . 
+
+## Customized AI
 
 #### Training AI
 
@@ -75,9 +83,42 @@ Find Pure Strategy Nash equilibrium.
 
 <https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L317-L335>
 
+## Exercise
 
+### SML-game-2
 
+Consider the following 3x3 game:
+   
+   ```
+   |          | Player 2: S | Player 2: M | Player 2: L |
+   |----------|------------------|------------------|------------------|
+   | Player 1: S | (6, 4)          | (4, 6)          | (1, 0)          |
+   | Player 1: M | (2, 3)          | (5, 3)          | (3, 6)          |
+   | Player 1: L | (12, 9)         | (10, 11)        | (4, 5)          |
+   ```
 
+### SML-game-3
+
+Consider the following 3x3 game: 
+
+   ```
+   |          | Player 2: S | Player 2: M | Player 2: L |
+   |----------|------------------|------------------|------------------|
+   | Player 1: S | (1, -1)         | (0, 0)          | (0, 0)          |
+   | Player 1: M | (0, 0)          | (1, -1)         | (0, 0)          |
+   | Player 1: L | (0, 0)          | (0, 0)          | (1, -1)         |
+   ```
+
+### Game 黄綠卡2
+
+|  |玩家2綠卡  |玩家2黄卡  |
+|---|---|---|
+|玩家1綠卡  |(5, 5)  |(2, 6)  |
+|玩家1黄卡  |(6, 2)  |(1, 1)  |
+
+### Prompt for Pure strategy Nash equilibrium
+
+In verify whether a cell is a Nash equilibrium, you need to compute each player's deviation's best benefit. (i.e. the highest payoff for the player when he/she deviates from the current strategy minus the current payoff.) Write the deviation benefit as a tuple (player1's deviation benefit, player2's deviation benefit) in your explanation. The cell is a Nash equilibrum only the tuple is less than or equal to (0, 0).
 
 ## Which AI is better? 
 
