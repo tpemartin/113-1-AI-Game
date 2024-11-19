@@ -134,3 +134,4 @@ AppScripts/
 
 # lecture notes trash
 lecture-notes/trash/
+.DS_Store
