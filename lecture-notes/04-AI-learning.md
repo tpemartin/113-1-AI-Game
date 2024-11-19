@@ -240,11 +240,11 @@ Would you like to explore mixed strategy Nash equilibria or other game theory co
 
 </details>
 
-<summary>
+<details>
 
 ### Gemini in Colab
 
-<details>Gemini in Colab</details>
+<summary>Gemini in Colab</summary>
 
 ***
 
