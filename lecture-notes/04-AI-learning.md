@@ -37,6 +37,21 @@ Nash equilibrium does not always give you the best outcome since people are not 
 
   - Pure strategy in Nash equilibrium is not always your best strategy in practice, unless ... . 
 
+
+## Prompt for Pure strategy Nash equilibrium
+
+In verify whether a cell is a Nash equilibrium, you need to compute each player's deviation's best benefit. (i.e. the highest payoff for the player when he/she deviates from the current strategy minus the current payoff.) Write the deviation benefit as a tuple (player1's deviation benefit, player2's deviation benefit) in your explanation. The cell is a Nash equilibrum only the tuple is less than or equal to (0, 0).
+
+### Game 黄綠卡2
+
+```
+|  |玩家2綠卡  |玩家2黄卡  |
+|---|---|---|
+|玩家1綠卡  |(5, 5)  |(2, 6)  |
+|玩家1黄卡  |(6, 2)  |(1, 1)  |
+```
+
+
 ## Customized AI
 
 #### Training AI
@@ -109,16 +124,17 @@ Consider the following 3x3 game:
    | Player 1: L | (0, 0)          | (0, 0)          | (1, -1)         |
    ```
 
-### Game 黄綠卡2
+### 剪刀石頭布
 
-|  |玩家2綠卡  |玩家2黄卡  |
-|---|---|---|
-|玩家1綠卡  |(5, 5)  |(2, 6)  |
-|玩家1黄卡  |(6, 2)  |(1, 1)  |
+Consider the following 3x3 game: 
 
-### Prompt for Pure strategy Nash equilibrium
-
-In verify whether a cell is a Nash equilibrium, you need to compute each player's deviation's best benefit. (i.e. the highest payoff for the player when he/she deviates from the current strategy minus the current payoff.) Write the deviation benefit as a tuple (player1's deviation benefit, player2's deviation benefit) in your explanation. The cell is a Nash equilibrum only the tuple is less than or equal to (0, 0).
+   ```
+   |          | Player 2: 剪刀 | Player 2: 石頭 | Player 2: 布 |
+   |----------|------------------|------------------|------------------|
+   | Player 1: 剪刀 | (0, 0)          | (-1, 1)         | (1, -1)         |
+   | Player 1: 石頭 | (1, -1)         | (0, 0)          | (-1, 1)         |
+   | Player 1: 布 | (-1, 1)         | (1, -1)         | (0, 0)          |
+   ```
 
 ## Which AI is better? 
 
