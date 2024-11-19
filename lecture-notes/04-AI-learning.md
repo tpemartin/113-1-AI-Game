@@ -320,7 +320,7 @@ I hope this helps! Let me know if you have any other questions.
 
 ***
 
-... 七回合之後, 想提升AI的策略性考去回顧對手過去的策略，並思考對手的策略來調整自己的策略。
+... 七回合之後, 想提升AI的策略性思考，希望它能回顧對手過去的策略，並思考對手的策略來調整自己的策略。
 
 <https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L195-L222>
 
