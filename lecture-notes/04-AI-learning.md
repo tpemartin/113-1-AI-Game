@@ -3,6 +3,81 @@
 > How to train AI to play games?
 
   - Train and validate AI first. 
+  
+## Find Pure Strategy Nash equilibrium
+
+<https://github.com/tpemartin/113-1-AI-Game/blob/b8c3d5b6c9c1f151f87f3b078847de8c8850c431/chat/Nash-equilibrium.txt#L52-L59>
+
+
+> :exclamation: 確認AI的認知是否正確，並且能夠解釋AI的答案。
+
+### Exercise
+
+Find Pure Strategy Nash equilibrium.
+
+```
+|          | Player 2: S | Player 2: M | Player 2: L |
+|----------|------------------|------------------|------------------|
+| Player 1: S | (6, 4)          | (4, 6)          | (1, 0)          |
+| Player 1: M | (2, 3)          | (5, 3)          | (3, 6)          |
+| Player 1: L | (12, 9)         | (10, 11)        | (4, 5)          |
+```
+
+
+## Strategy suggestion 
+
+> Ask if there is a dominant strategy first. 
+
+
+## Role play training
+
+#### Training AI
+
+:exclamation: :exclamation: :exclamation: Validation is the key. (驗證是AI助理品質的關鍵 -- 你還是需要有基本賽局知識。) 
+
+<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L1-L13>
+
+  - 請AI說明他所懂的部份，再配合自己的知識去validate AI的答案。  
+  - AI並非全知，他和人一樣需要學習。  
+
+<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L15-L23>
+
+*** 
+
+第一次AI學習
+
+<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L25-L43>
+
+***
+
+第二次AI學習
+
+<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L45-L51>
+
+> :exclamation: :exclamation: :exclamation: "跟我解釋為什麼你的出招是你的最佳策略。" 在prompt中加入可以validate AI理性思維合理性的指示，方便後續調教AI。
+
+***
+
+... 七回合之後, 想提升AI的策略性思考，希望它能回顧對手過去的策略，並思考對手的策略來調整自己的策略。
+
+<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L195-L222>
+
+
+***
+
+#### Use the Trained AI 
+
+再次驗證AI的策略性思考，如果合理，透過prompt指示AI使用它被訓練完後的策略理性思考來進行以後遊戲的對局。
+
+<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L288-L315>
+
+***
+
+<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L317-L335>
+
+
+
+
 
 ## Which AI is better? 
 
@@ -267,49 +342,3 @@ I hope this helps! Let me know if you have any other questions.
 ***
 
 </details>
-
-## Role play training
-
-#### Training AI
-
-:exclamation: :exclamation: :exclamation: Validation is the key. (驗證是AI助理品質的關鍵 -- 你還是需要有基本賽局知識。) 
-
-<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L1-L13>
-
-  - 請AI說明他所懂的部份，再配合自己的知識去validate AI的答案。  
-  - AI並非全知，他和人一樣需要學習。  
-
-<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L15-L23>
-
-*** 
-
-第一次AI學習
-
-<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L25-L43>
-
-***
-
-第二次AI學習
-
-<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L45-L51>
-
-> :exclamation: :exclamation: :exclamation: "跟我解釋為什麼你的出招是你的最佳策略。" 在prompt中加入可以validate AI理性思維合理性的指示，方便後續調教AI。
-
-***
-
-... 七回合之後, 想提升AI的策略性思考，希望它能回顧對手過去的策略，並思考對手的策略來調整自己的策略。
-
-<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L195-L222>
-
-
-***
-
-#### Use the Trained AI 
-
-再次驗證AI的策略性思考，如果合理，透過prompt指示AI使用它被訓練完後的策略理性思考來進行以後遊戲的對局。
-
-<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L288-L315>
-
-***
-
-<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L317-L335>
