@@ -189,9 +189,9 @@ Note: This is similar to the "Matching Pennies" game, a classic example of a gam
 
 ### Gemini 1.5 flash  
 
-<summary>
+<details>
 
-<details>Gemini 1.5 flash</details>
+<summary>Gemini 1.5 flash</summary>
 
 
 ***
