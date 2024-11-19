@@ -1,39 +1,16 @@
 # AI learning
 
-當你的策略有納入對手的策略想法時，你便已在進行策略性思考
+> How to train AI to play games?
 
-  1. 只列出玩家1的報酬矩陣有可能得出合理的策略嗎？(Dominant strategy?)  
-  2. 當你對對手的策略有想法時，你的策略合理策略是什麼？  
-  3. 你如何形成對對手策略的想法？  
+  - Train and validate AI first. 
 
-> 如何讓AI學習策略性思考？
+## Which AI is better? 
 
-
-## AI preset
-
-  - 報酬是什麼？
-
-### Game 黄綠卡3
-
-|  |玩家2綠卡  |玩家2黄卡  |
-|---|---|---|
-|玩家1綠卡  |(5, 2)  |(3, 6)  |
-|玩家1黄卡  |(6, 3)  |(2, 5)  |
-
-### Game 黄綠卡2
-
-|  |玩家2綠卡  |玩家2黄卡  |
-|---|---|---|
-|玩家1綠卡  |(7, 5)  |(2, 6)  |
-|玩家1黄卡  |(6, 2)  |(5, 1)  |
-
-# Which AI is better? 
-
-## Design a game
+### Design a game
 
 > Design a 2x2 game where there is no pure strategy Nash equilibrium.
 
-### Microsoft Copilot 
+#### Microsoft Copilot 
 
 <details>
 <summary>Copilot's answer</summary>
@@ -42,14 +19,14 @@
 
 Sure! Let's design a 2x2 game where there is no pure strategy Nash equilibrium. Here's an example:
 
-#### Game Matrix
+##### Game Matrix
 
 |          | Player B: Left | Player B: Right |
 |----------|----------------|-----------------|
 | **Player A: Up**    | (2, 1)          | (0, 0)           |
 | **Player A: Down**  | (0, 0)          | (1, 2)           |
 
-#### Explanation
+##### Explanation
 
 In this game:
 - If Player A chooses Up and Player B chooses Left, the payoff is (2, 1).
@@ -72,7 +49,7 @@ Would you like to explore more about mixed strategy Nash equilibria or any other
 
 </details>
 
-### GPT 4o mini  
+#### GPT 4o mini  
 
 <details>
 <summary>GPT 4o mini</summary>
@@ -94,13 +71,13 @@ The payoff matrix might look as follows:
 | A1      | (2, 2)     | (0, 3)     |
 | A2      | (3, 0)     | (1, 1)     |
 
-#### Payoff Explanation:
+##### Payoff Explanation:
 - **(2, 2)**: If Player A chooses A1 and Player B chooses B1.
 - **(0, 3)**: If Player A chooses A1 and Player B chooses B2.
 - **(3, 0)**: If Player A chooses A2 and Player B chooses B1.
 - **(1, 1)**: If Player A chooses A2 and Player B chooses B2.
 
-#### Analyzing the Payoffs:
+##### Analyzing the Payoffs:
 1. If both players choose (A1, B1): 
    - Player A gets 2, but would get 3 by switching to A2 (deviation).
 2. If both players choose (A1, B2):
@@ -110,7 +87,7 @@ The payoff matrix might look as follows:
 4. If both players choose (A2, B2):
    - Player B gets 1, but would get 2 by switching to B1 (deviation).
 
-#### Conclusion:
+##### Conclusion:
 In all scenarios, at least one player has an incentive to deviate from the strategy they are currently using. Therefore, there is no combination of strategies (no pure strategy Nash equilibrium) where both players can choose a strategy and have no incentive to unilaterally change their strategy.
 
 This type of game is often used to illustrate concepts in mixed strategies, where players randomize over their choices. In this particular game, both players would find it optimal to randomize between their strategies to reach a mixed strategy Nash equilibrium.
@@ -121,7 +98,7 @@ This type of game is often used to illustrate concepts in mixed strategies, wher
 
 <details>
 
-### GPT 4o
+#### GPT 4o
 
 <summary>GPT 4o</summary>
 
@@ -156,7 +133,7 @@ In this game, there is no pair of pure strategies where both players are best re
 
 </details>
 
-### Claude sonnet 3.5
+#### Claude sonnet 3.5
 
 <details>
 
@@ -187,7 +164,7 @@ Note: This is similar to the "Matching Pennies" game, a classic example of a gam
 
 </details>
 
-### Gemini 1.5 flash  
+#### Gemini 1.5 flash  
 
 <details>
 
@@ -242,7 +219,7 @@ Would you like to explore mixed strategy Nash equilibria or other game theory co
 
 <details>
 
-### Gemini in Colab
+#### Gemini in Colab
 
 <summary>Gemini in Colab</summary>
 
@@ -291,9 +268,9 @@ I hope this helps! Let me know if you have any other questions.
 
 </details>
 
-## Role play interaction
+## Role play training
 
-### Training AI
+#### Training AI
 
 :exclamation: :exclamation: :exclamation: Validation is the key. (驗證是AI助理品質的關鍵 -- 你還是需要有基本賽局知識。) 
 
@@ -327,7 +304,7 @@ I hope this helps! Let me know if you have any other questions.
 
 ***
 
-### Use the Trained AI 
+#### Use the Trained AI 
 
 再次驗證AI的策略性思考，如果合理，透過prompt指示AI使用它被訓練完後的策略理性思考來進行以後遊戲的對局。
 
