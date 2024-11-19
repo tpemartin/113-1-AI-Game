@@ -293,4 +293,12 @@ I hope this helps! Let me know if you have any other questions.
 
 ## Role play interaction
 
-  - <>
+:exclamation: :exclamation: :exclamation: Validation is the key. (驗證是AI助理品質的關鍵)
+
+<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L1-L13>
+
+  - 請AI說明他所懂的部份，再配合自己的知識去validate AI的答案。  
+  - AI並非全知，他和人一樣需要學習。  
+
+<https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L15-L23>
+
