@@ -23,6 +23,9 @@ Find Pure Strategy Nash equilibrium.
 | Player 1: L | (12, 9)         | (10, 11)        | (4, 5)          |
 ```
 
+<https://github.com/tpemartin/113-1-AI-Game/blob/1849a843fee74c25df66d24d3f38daee0a226bec/chat/Pure-strategy-Nash-equilibrium.txt#L51-L132>
+
+> :exclamation: The answer is not write. 
 
 ## Strategy suggestion
 
@@ -40,7 +43,9 @@ Nash equilibrium does not always give you the best outcome since people are not 
 
 ## Prompt for Pure strategy Nash equilibrium
 
-In verify whether a cell is a Nash equilibrium, you need to compute each player's deviation's best benefit. (i.e. the highest payoff for the player when he/she deviates from the current strategy minus the current payoff.) Write the deviation benefit as a tuple (player1's deviation benefit, player2's deviation benefit) in your explanation. The cell is a Nash equilibrum only the tuple is less than or equal to (0, 0).
+When ask to fine pure strategy Nash equilibrium, to verify whether a cell is a Nash equilibrium, you need to compute each player's deviation's best benefit. (i.e. the highest payoff for the player when he/she deviates from the current strategy minus the current payoff.) Write the deviation benefit as a tuple (player1's deviation benefit, player2's deviation benefit) in your explanation. The cell is a Nash equilibrum only the tuple is less than or equal to (0, 0).
+
+> Why does the prompt work? (Vague memory in the long past. Deviation benefit tuple hold the valuable information in a closer sentence.)
 
 ### Game 黄綠卡2
 
@@ -85,6 +90,7 @@ In verify whether a cell is a Nash equilibrium, you need to compute each player'
 
 <https://github.com/tpemartin/113-1-AI-Game/blob/7929d3f7bbea83e624360dfb7956b4232763e4fb/chat/AI-training-GPT-4O-mini.txt#L195-L222>
 
+> :exclamation: 有記憶錯誤。你如何更正？
 
 ***
 
