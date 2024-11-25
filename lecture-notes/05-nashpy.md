@@ -2,7 +2,7 @@
 
 ## What is Nashpy?
 
-    - Nashpy is a Python library for the computation of equilibria in two-player games.
+- Nashpy is a Python library for the computation of equilibria in two-player games.
 
 ## Google Colab
 
