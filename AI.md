@@ -35,3 +35,36 @@ If I ask you to solve for the pure startegy Nash equilibrium, you will examine e
 | **Strategy D** | (1, 4)    | (0, 3)    | (2, 1)    | (2, 2)    |
 
 我是玩家1
+
+
+In 
+```mermaid
+flowchart LR
+
+A1{A} --> B1{B}
+B1 --> B1p1["(4,5)"]
+B1 --> A2{A}
+A2 --> A2p1["(12,5)"]
+A2 --> A2p2["(33,0)"]
+A2 --> A2p3["(3,67)"]
+B1 --> B1p2["(1,92)"]
+B1 --> B1p3["(69,13)"]
+```
+
+How to style `[]` so that the backgournd is white and the border is white?  
+
+```mermaid
+flowchart LR
+
+    A1{A} --> B1{B}
+    B1 --> B1p1["(4,5)"]
+    B1 --> A2{A}
+    A2 --> A2p1["(12,5)"]
+    A2 --> A2p2["(33,0)"]
+    A2 --> A2p3["(3,67)"]
+    B1 --> B1p2["(1,92)"]
+    B1 --> B1p3["(69,13)"]
+
+    classDef whiteFill fill:#ffffff,stroke:#ffffff;
+    class B1p1,B1p2,B1p3,A2p1,A2p2,A2p3 whiteFill;
+```
