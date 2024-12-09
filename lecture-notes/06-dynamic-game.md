@@ -17,6 +17,13 @@
 > And define those payoff nodes as white fill. The mermaid code should always use `flowchart LR` unless requested otherwise.
 > 
 > Whenever I request Mermaid syntax, make sure your code should always include the mermaid syntax holder used in markdown. 
+>
+
+## Hackmd.io
+
+It is a markdown editor that supports mermaid syntax. You can use it to draw game trees.
+
+  - <https://hackmd.io>
 
 ## Hand-drawn game tree
 
