@@ -12,7 +12,7 @@ The following is a game that is played by two players, A and B. The game is play
 > ```
 > classDef whiteFill fill:#ffffff,stroke:#ffffff;
 > ```
-> And define those payoff nodes as white fill. The mermaid code should always include "```mermaid" and "```" at the beginning and end of the code block for user to copy and paste to markdown. And should always use `flowchart LR` unless request otherwise.
+> And define those payoff nodes as white fill. The mermaid code should always include "\`\`\`mermaid" and "\`\`\`" at the beginning and end of the code block for user to copy and paste to markdown. And should always use `flowchart LR` unless request otherwise.
 
 
 ## Text based game tree
