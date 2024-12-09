@@ -8,13 +8,45 @@
 
 以下的prompt設定，讓AI看懂mermaid[^1]語法所繪的賽局樹狀結構。同時也要求AI若要回答動態賽局問題，也要使用mermaid語法來描述。
 
-> When I supply a mermaid flowchart to represent a game tree, the information inside `[]` is payoff information, such as `["(4,5)"]`. The first number in the tuple represents the payoff for the player at the beginning of the tree, and the second number represents the payoff for the other player. The information inside `||` is the player's move, such as `|A:top|`. The information inside `(())` is the player's name, such as `A1((A))`.
+  - 一個Game tree實例，加上mermaid語法的說明。
+
+***
+
+以下是用mermaid flowchart語法所寫的一個賽局樹狀結構（game tree）的例子。這個例子是一個兩人賽局，A和B。
+
+```mermaid
+flowchart TD
+    A1((A)) --> |Move 1| B1((B))
+    A1 --> |Move 2| B2((B))
+
+    B1 --> |Response 1| po1["(3, 2)"]
+    B1 --> |Response 2| po2["(1, 5)"]
+    
+    B2 --> |Response 3| po3["(4, 1)"]
+    B2 --> |Response 4| po4["(2, 3)"]
+
+    classDef whiteFill fill:#ffffff,stroke:#ffffff;
+    class po1,po2,po3,po4 whiteFill;
+```
+
+- (())為玩家節點（player's node），例如A1((A))表示玩家A的第一個節點。  
+- []為報酬節點（payoff node），例如po1["(3, 2)"]表示在這個節點的結果是(3, 2)。  
+- --> || 為行動連接（move connection），連結兩個節點，箭頭左邊的節點一律是玩家節點，而右邊若連結玩家節點，表示左邊玩家行動後輪到右邊玩家；若右邊為報酬節點，表示左邊玩家行動後，賽局即結束，報酬依報酬節點標示結算。
+
+若你了解我的說明，以文字描述這個賽局，但無需找出最佳策略。
+
+***
+
+
+When I supply a mermaid flowchart to represent a game tree, the information inside [] is payoff information, such as ["(4,5)"]. The first number in the tuple represents the payoff for the player at the beginning of the tree, and the second number represents the payoff for the other player. The information inside || is the player's move, such as |A:top|. The information inside (()) is the player's name, such as A1((A)).
+
+> When I supply a mermaid flowchart to represent a game tree, the information inside `[]` is payoff information, such as `["(4,5)"]`. The first number in the tuple represents the payoff for the player at the beginning of the tree, and the second number represents the payoff for the other player, so on so forth if there are more than two players. The information inside `||` is the player's move, such as `|A:top|`. The information inside `(())` is the player's name, such as `A1((A))`.
 >
-> When I ask you to draw a game tree in mermaid, always supply the following class setup at the end:
+> When I ask you to draw a game tree in mermaid, follow the previous paragraph's definition of player nodes, payoff nodes, and moves requirement. For payoff nodes, create reasonable node names. And always supply the following class setup at the end:
 > ```
 > classDef whiteFill fill:#ffffff,stroke:#ffffff;
 > ```
-> And define those payoff nodes as white fill. The mermaid code should always use `flowchart LR` unless requested otherwise.
+> And define those payoff nodes as white fill -- the definition syntax should trim off unneccessary white space between commas. The mermaid code should always use `flowchart LR` unless requested otherwise.
 > 
 > Whenever I request Mermaid syntax, make sure your code should always include the mermaid syntax holder used in markdown. 
 >
