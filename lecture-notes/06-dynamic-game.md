@@ -91,6 +91,36 @@ flowchart LR
     class R1,R2,R3,R4 whiteFill;
 ```
 
+## Game play
+
+
+```mermaid
+flowchart LR
+    A1((A)) --> |Move 1| B1((B))
+    A1 --> |Move 2| B2((B))
+
+    B1 --> |Response 1| R1["(3, 2)"]
+    B1 --> |Response 2| R2["(1, 5)"]
+    
+    B2 --> |Response 3| R3["(4, 1)"]
+    B2 --> |Response 4| R4["(2, 3)"]
+
+    classDef whiteFill fill:#ffffff,stroke:#ffffff;
+    class R1,R2,R3,R4 whiteFill;
+```
+
+  1. You are player A. dynamic-A1 (choose between Move 1 and Move 2)
+  2. Look at the result from dynamic-A1. Suppose you are player B. How would you play the game? dynamic-B1-tricky (choose between Response 1 and Response 2, and Response 3 and Response 4)  
+  3. Look at the result from dynamic-A1. Suppose you are player B. How would you play the two sub games: dynamic-B1 (choose between Response 1 and Response 2) and dynamic-B2 (choose between Response 3 and Response 4)
+
+老師會計算你在兩個角色的總酬報加總，全班最高的加2， 其他加1分 bonus
+
+## Conclusion
+
+Dynamic game:
+
+  - Play forwardly
+  - Think backwardly (and strategically)
 
 
 [^1]: Mermaid is a JavaScript-based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically. (<https://mermaid.js.org/intro/>)
