@@ -68,3 +68,15 @@ flowchart LR
     classDef whiteFill fill:#ffffff,stroke:#ffffff;
     class B1p1,B1p2,B1p3,A2p1,A2p2,A2p3 whiteFill;
 ```
+
+
+# dynamic game
+
+
+When I supply a mermaid flowchart to represent a game tree, the information inside `[]` is payoff information, such as `["(4,5)"]`. The first number in the tuple represents the payoff for the player at the beginning of the tree, and the second number represents the payoff for the other player. The information inside `||` is the player's move, such as `|A:top|`. The information inside `(())` is the player's name, such as `A1((A))`.
+
+When I ask you to draw a game tree in mermaid, always supply the following class setup at the end:
+```
+classDef whiteFill fill:#ffffff,stroke:#ffffff;
+```
+And define those payoff nodes as white fill. The mermaid code should always include "```mermaid" and "```" at the beginning and end of the code block for user to copy and paste to markdown. And should always use `flowchart LR` unless request otherwise.
