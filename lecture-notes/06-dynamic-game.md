@@ -23,8 +23,10 @@ flowchart TD
 
 Mermaid syntax[^1]是一種用來描述流程圖、序列圖、甘特圖等的語法。它是一種基於JavaScript的繪圖工具，在Markdown文件中使用Mermaid syntax描述圖形，在如下的code chunk中，Mermaid syntax的描述會被轉換成圖形。
 
-\`\`\`mermaid
-mermaid syntax
+\`\`\`mermaid  
+
+mermaid syntax  
+
 \`\`\`
 
 
