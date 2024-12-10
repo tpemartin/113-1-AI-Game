@@ -1,0 +1,23 @@
+
+以下是用mermaid flowchart語法所寫的一個賽局樹狀結構（game tree）的例子。這個例子是一個兩人賽局，A和B。
+
+```mermaid
+flowchart TD
+    A1((A)) --> |Move 1| B1((B))
+    A1 --> |Move 2| B2((B))
+
+    B1 --> |Response 1| po1["(3, 2)"]
+    B1 --> |Response 2| po2["(1, 5)"]
+    
+    B2 --> |Response 3| po3["(4, 1)"]
+    B2 --> |Response 4| po4["(2, 3)"]
+
+    classDef whiteFill fill:#ffffff,stroke:#ffffff;
+    class po1,po2,po3,po4 whiteFill;
+```
+
+- (())為玩家節點（player's node），例如A1((A))表示玩家A的第一個節點。  
+- []為報酬節點（payoff node），例如po1["(3, 2)"]表示在這個節點的結果是(3, 2)。  
+- --> || 為行動連接（move connection），連結兩個節點，箭頭左邊的節點一律是玩家節點，而右邊若連結玩家節點，表示左邊玩家行動後輪到右邊玩家；若右邊為報酬節點，表示左邊玩家行動後，賽局即結束，報酬依報酬節點標示結算。
+
+若你了解我的說明，以文字描述這個賽局，但無需找出最佳策略。
