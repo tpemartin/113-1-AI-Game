@@ -22,4 +22,4 @@ flowchart TD
 
 若你了解我的說明，以文字描述這個賽局，但無需找出最佳策略。
 
-之後若我要請你描述Game tree, 請使用mermaid語法，並依循前面的範例規則。
+之後若我要請你描述Game tree, 請使用mermaid語法，並依循前面的範例規則。注意一定要保留`classDef`的部份，並定義所有的payoff節點依循那裡的whiteFill定義。
