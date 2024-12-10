@@ -34,7 +34,7 @@ flowchart TD
 
 ***
 
-<https://github.com/tpemartin/113-1-AI-Game/blob/ac5e0c936b3e6c832163847521e09a68b8771be0/chat/preset-dynamic-game.txt#L2-L25>
+<https://github.com/tpemartin/113-1-AI-Game/blob/cfda5761b656c1c3be1906758f5dfa6ec7fc3c64/chat/preset-dynamic-game.txt#L2-L25>
 
 
 ### Game tree圖片
