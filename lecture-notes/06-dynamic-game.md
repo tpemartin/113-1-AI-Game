@@ -1,12 +1,34 @@
 # Dynamic Games
 
-![](../img/game-tree.jpg)
 
-  - 如何訓練AI描述動態賽局的樹狀結構？
+```mermaid
+flowchart TD
+    A1((A)) --> |Move 1| B1((B))
+    A1 --> |Move 2| B2((B))
+
+    B1 --> |Response 1| po1["(3, 2)"]
+    B1 --> |Response 2| po2["(1, 5)"]
+    
+    B2 --> |Response 3| po3["(4, 1)"]
+    B2 --> |Response 4| po4["(2, 3)"]
+
+    classDef whiteFill fill:#ffffff,stroke:#ffffff;
+    class po1,po2,po3,po4 whiteFill;
+```
+
+  - 如何訓練AI描述動態賽局的樹狀結構？ 用什麼文字符號來描述？  
+  - 說不清楚用圖片AI可以懂嗎？  
 
 ## AI preset
 
-以下的prompt設定，讓AI看懂mermaid[^1]語法所繪的賽局樹狀結構。同時也要求AI若要回答動態賽局問題，也要使用mermaid語法來描述。
+要AI揉合兩個知識：  
+
+  - Game tree
+  - Mermaid syntax[^1]
+
+### 教AI如何文字描述game tree
+
+若你打算要AI揉合兩種知識，以範例來設定你的prompt是個不錯的作法。
 
   - 一個Game tree實例，加上mermaid語法的說明。
 
@@ -14,7 +36,11 @@
 
 <https://github.com/tpemartin/113-1-AI-Game/blob/5678848b5162b38361a6b659849402e359806692/chat/preset-dynamic-game.txt#L2-L23>
 
-***
+
+### Game tree圖片
+
+  - AI懂嗎？
+  
 
 
 When I supply a mermaid flowchart to represent a game tree, the information inside [] is payoff information, such as ["(4,5)"]. The first number in the tuple represents the payoff for the player at the beginning of the tree, and the second number represents the payoff for the other player. The information inside || is the player's move, such as |A:top|. The information inside (()) is the player's name, such as A1((A)).
